@@ -33,8 +33,8 @@ def main():
         print("Login button clicked.")
 
         WebDriverWait(driver, 20).until(EC.visibility_of_element_located((By.XPATH, '//*[@id="modal_email"]')))
-        driver.find_element(By.XPATH, '//*[@id="modal_email"]').send_keys('manojnasanam@gmail.com')
-        driver.find_element(By.XPATH, '//*[@id="modal_password"]').send_keys('sanam@123456789')
+        driver.find_element(By.XPATH, '//*[@id="modal_email"]').send_keys('@gmail.com')
+        driver.find_element(By.XPATH, '//*[@id="modal_password"]').send_keys('#####')
         time.sleep(10)
         driver.find_element(By.XPATH, '//*[@id="modal_login_submit"]').click()
         print("Login submitted.")
